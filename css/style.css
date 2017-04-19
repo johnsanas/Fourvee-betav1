@@ -1,0 +1,123 @@
+html {
+  font-family: "Sofia Pro";
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+	height: 100%;
+}
+
+body {
+  margin: 0;
+	height: 94%;
+}
+
+header {
+	text-align: center;
+	color: darkgray;
+}
+.mainContainer {
+	margin: 3%;
+	height: 94%;
+}
+
+.mainContainer span {
+	color: darkgray;
+}
+
+.top, .topLoad{
+	background-color: #ffdd51;
+	height: 100%;
+	/*margin: auto;*/
+	text-align: center;
+}
+
+.mainBorder {
+	margin: 3%;
+}
+
+.mainSlide {
+  float: right;
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+  bottom: -50%;
+}
+
+.topLoad .mainSlide {
+	bottom: 50px;
+}
+
+.mainTitle{
+	font-size: 220px;
+	font-weight: bold;
+	font-family: Gilroy;
+	position: relative;
+	left: 50%;
+	top: -80px;
+	margin: 0 0 auto 0;
+
+}
+
+.topLoad .mainTitle {
+}
+
+.subTitle {
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+	left: 50%;
+	text-align: right;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	top: 50%;
+}
+
+.content .picPreview {
+	width: 40%;
+	height:  inherit;
+	float: left;
+	position: relative;
+}
+
+.picPreview img:first-of-type{
+	background-image: url('../images/image1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: inherit;
+	height: 350px;
+	width: 100%;
+	margin: 225px 0 auto 0;
+}
+
+.content .textPreview {
+	width: 60%;
+	height: inherit;
+	float: left;
+	position: relative;
+	top: -253px;
+	text-align: left;
+	overflow: auto;
+}
+
+.textPreview .title {
+	margin: 320px 5% 0 5%;
+	font-size: 3.5em;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.textPreview .date {
+	color: gray;
+	margin: 5px 5% 0 5%;
+}
+
+.textPreview .description {
+	margin: 20px 15% 0 5%;
+	font-size: 1.5em;
+	line-height: 1.3;
+	display: none;
+}
