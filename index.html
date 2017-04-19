@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script>
+		$(document).ready(function(){
+				//$(".mainTitle , .subTitle" ).hide();
+				//$(".mainTitle, .subTitle").fadeIn(2500);
+				//hide MainLoad
+				$(".topLoad").hide();
+			
+				$(".mainTitle").addClass("animated").addClass("slideInUpBig");
+				$(window).on("scroll",function(){
+					$(".top").slideUp("slow");
+				});
+				
+				$(".top .mainSlide .mainTitle").on("click",function(){
+					$(".top").slideUp("slow");
+					//$(".top").delay("slow").css("display", "block");
+					
+					$(".topLoad").show();
+					//$(".mainContainer").css({"margin": "3%", "height": "94%"});
+					$(".topLoad").addClass("animated").addClass("fadeInUpBig").delay();
+					$(".topLoad").animate({height: "50%"});
+				});
+			
+				$(".topLoad .mainSlide .mainTitle").on("click", function() {
+					$(".topLoad").animate({height: "100%"});
+					//$(".topLoad div:first-child").animate({bottom: "0%"}, 1500);
+				});
+			
+				$(".content .textPreview").on("click", function() {
+					console.log(this + "you clicked!");
+					$(this).css("background-color", "rgba(255,255,255, 0.9)");
+					$(".textPreview .title").animate({margin: "6% 5% 0 5%"});
+					$(".textPreview .date").text("Read | Links");
+					$(".textPreview .description").show();
+				});
+				
+		});
+	</script>
+</head>
+<body>
+<!--<header>home</header> -->
+<div class="mainContainer">
+	<div class="top">
+		<div class="mainSlide">
+				<div class="mainTitle">FOURVEE</div>
+				<div class="subTitle">Tech News Blog Style</div>
+		</div>
+	</div>
+	
+	<div class="topLoad">
+		<div class="mainSlide">
+				<div class="mainTitle">FOURVEE</div>
+		</div>
+		<div class="content">
+			<div class="picPreview">
+				<img alt="preview image">
+			</div>
+			<div class="textPreview">
+				<h1 class="title">Live your Kamehameha-blasting dream with Dragon Ball Z VR</h1>
+				<p class="date">- 19 Apr</p>
+				<p class="description">
+					Facebook teased how it would create social experiences in virtual reality, and now it's ready to take things one step further. It just launched a Facebook Spaces beta that lets Oculus Rift owners hang out together (up to four at once) in VR. The experience will be familiar if you saw Facebook's preview at Oculus Connect, but it's clearly more refined with its actual launch. You can create an avatar that's as realistic or fanciful as you want, draw 3D objects and show off your personal videos and use 360-degree video backgrounds to liven up your chats. There's even a selfie stick to take virtual self-portraits. And if a friend can't use VR, you can bring them into the conversation using Facebook Messenger video calls. <br>
+					
+					Facebook teased how it would create social experiences in virtual reality, and now it's ready to take things one step further. It just launched a Facebook Spaces beta that lets Oculus Rift owners hang out together (up to four at once) in VR. The experience will be familiar if you saw Facebook's preview at Oculus Connect, but it's clearly more refined with its actual launch. You can create an avatar that's as realistic or fanciful as you want, draw 3D objects and show off your personal videos and use 360-degree video backgrounds to liven up your chats. There's even a selfie stick to take virtual self-portraits. And if a friend can't use VR, you can bring them into the conversation using Facebook Messenger video calls. <br>
+					
+					Facebook teased how it would create social experiences in virtual reality, and now it's ready to take things one step further. It just launched a Facebook Spaces beta that lets Oculus Rift owners hang out together (up to four at once) in VR. The experience will be familiar if you saw Facebook's preview at Oculus Connect, but it's clearly more refined with its actual launch. You can create an avatar that's as realistic or fanciful as you want, draw 3D objects and show off your personal videos and use 360-degree video backgrounds to liven up your chats. There's even a selfie stick to take virtual self-portraits. And if a friend can't use VR, you can bring them into the conversation using Facebook Messenger video calls. 
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
